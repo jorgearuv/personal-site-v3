@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'Tabs & Spaces',
-  domain: 'jorgeruvalcaba.dev',
+  domain: 'personal-site-v3.vercel.app',
   author: 'Jorge Ruvalcaba',
 
   // open graph metadata (optional)
