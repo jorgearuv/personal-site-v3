@@ -47,5 +47,12 @@ module.exports = {
   //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
-  pageUrlOverrides: null
+  pageUrlOverrides: {
+    '/about': 'da6cd63a22b3429f8627bfb16c11dd69',
+    '/projects': 'eca3100837544fbfae31d0f8efdba27c',
+    '/contact': '7c188cc527d941aea7e5296961351264',
+    '/add-tab-to-search-in-your-gatsby-blog':
+      '8ca8e557d080439fa484a1541fb358c6',
+    '/welcome-to-my-crib': '25ec99f180b64499a13a4762e2261338'
+  }
 }
