@@ -12,7 +12,7 @@ module.exports = {
   author: 'Jorge Ruvalcaba',
 
   // open graph metadata (optional)
-  description: 'Example site description',
+  description: '@jorgearuv Piece of Internetz',
   socialImageTitle: 'Jorge Ruvalcaba',
   socialImageSubtitle: 'Tabs & Spaces',
 
@@ -50,7 +50,7 @@ module.exports = {
   pageUrlOverrides: {
     '/about': 'da6cd63a22b3429f8627bfb16c11dd69',
     '/projects': 'eca3100837544fbfae31d0f8efdba27c',
-    '/contact': '7c188cc527d941aea7e5296961351264',
+    '/contact': '2a96bb6228e2436b9d3df8754694fd11',
     '/add-tab-to-search-in-your-gatsby-blog':
       '8ca8e557d080439fa484a1541fb358c6',
     '/welcome-to-my-crib': '25ec99f180b64499a13a4762e2261338'
