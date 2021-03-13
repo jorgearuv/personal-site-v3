@@ -53,6 +53,11 @@ module.exports = {
     '/contact': '2a96bb6228e2436b9d3df8754694fd11',
     '/add-tab-to-search-in-your-gatsby-blog':
       '8ca8e557d080439fa484a1541fb358c6',
-    '/welcome-to-my-crib': '25ec99f180b64499a13a4762e2261338'
+    '/welcome-to-my-crib': '25ec99f180b64499a13a4762e2261338',
+    '/gmail-clone': '673819d15c1142f6b69f5c2ba10645f4',
+    '/markdown-previewer': '2d642f52a4b541f8904ebd18e7df8b42',
+    '/personal-site-v2': '02a653ca505840b197dd488efacb1688',
+    '/drum-machine': '2983d4a7e7b24b18b6e13ba538313754',
+    '/random-kanye-west-quote-generator': '13af8adabebd4f4d90c8c00c04a9d3d7'
   }
 }
