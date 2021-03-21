@@ -59,6 +59,7 @@ module.exports = {
     '/personal-site-v2': '02a653ca505840b197dd488efacb1688',
     '/drum-machine': '2983d4a7e7b24b18b6e13ba538313754',
     '/random-kanye-west-quote-generator': '13af8adabebd4f4d90c8c00c04a9d3d7',
-    '/uses': 'fff94bbbabb44b9a9d3ca2e77aaf1c37'
+    '/uses': 'fff94bbbabb44b9a9d3ca2e77aaf1c37',
+    '/setting-up-namecheap-domain-in-vercel': 'fa12dcf7b5954de2bb2284d05dd579c0'
   }
 }
