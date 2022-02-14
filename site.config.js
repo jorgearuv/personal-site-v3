@@ -24,7 +24,7 @@ module.exports = {
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon: null,
-  defaultPageCover: null,
+  defaultPageCover: './public/social.jpg',
   defaultPageCoverPosition: 0.5,
 
   // image CDN host to proxy all image requests through (optional)
