@@ -241,8 +241,6 @@ export function NotionPage({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
-  console.log('socialImage', socialImage)
-
   return (
     <>
       <PageHead
