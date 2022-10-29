@@ -42,7 +42,7 @@ export default withBundleAnalyzer({
       },
       {
         protocol: 'https',
-        hostname: 'transitivebullsh.it',
+        hostname: 'jorgearuv.dev',
         pathname: '**'
       }
     ],
