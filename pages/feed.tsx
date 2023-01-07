@@ -1,5 +1,10 @@
 import type { GetServerSideProps } from 'next'
+<<<<<<< HEAD
 import { type ExtendedRecordMap } from 'notion-types'
+=======
+
+import { ExtendedRecordMap } from 'notion-types'
+>>>>>>> 1c2f8a1 (chore: trigger release)
 import {
   getBlockParentPage,
   getBlockTitle,
@@ -48,6 +53,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
       block.type === 'page' &&
       block.parent_table === 'collection' &&
       parentPage?.id === idToUuid(config.rootNotionPageId)
+
     if (!isBlogPost) {
       continue
     }
