@@ -2,7 +2,7 @@ name: Update
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '* * * * *'
 
 jobs:
   empty_commit:
