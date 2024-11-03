@@ -20,6 +20,7 @@ export default siteConfig({
   twitter: 'jorgearuv',
   github: 'jorgeruvalcaba',
   linkedin: 'jorge-ruvalcaba',
+  bluesky: 'jorgearuv.dev',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
