@@ -86,6 +86,13 @@
   border-color: #2795e9;
 }
 
+.bluesky .actionBgPane {
+  background: #1185fe;
+}
+.bluesky:hover {
+  border-color: #1185fe;
+}
+
 .linkedin .actionBgPane {
   background: #0077b5;
 }
