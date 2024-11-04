@@ -2,13 +2,13 @@ import Head from 'next/head'
 
 import type * as types from '@/lib/types'
 import * as config from '@/lib/config'
-import { getSocialImageUrl } from '@/lib/get-social-image-url'
+// import { getSocialImageUrl } from '@/lib/get-social-image-url'
 
 export function PageHead({
   site,
   title,
   description,
-  pageId,
+  // pageId,
   image,
   url
 }: types.PageProps & {
@@ -22,7 +22,7 @@ export function PageHead({
   title = title ?? site?.name
   description = description ?? site?.description
 
-  const socialImageUrl = getSocialImageUrl(pageId) || image
+  // const socialImageUrl = getSocialImageUrl(pageId) || image
 
   return (
     <Head>
@@ -71,11 +71,11 @@ export function PageHead({
         </>
       )}
 
-      {socialImageUrl ? (
+      {image ? (
         <>
           <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:image' content={socialImageUrl} />
-          <meta property='og:image' content={socialImageUrl} />
+          <meta name='twitter:image' content={image} />
+          <meta property='og:image' content={image} />
         </>
       ) : (
         <meta name='twitter:card' content='summary' />
