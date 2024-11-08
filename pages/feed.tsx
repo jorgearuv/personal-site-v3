@@ -1,10 +1,5 @@
 import type { GetServerSideProps } from 'next'
-<<<<<<< HEAD
 import { type ExtendedRecordMap } from 'notion-types'
-=======
-
-import { ExtendedRecordMap } from 'notion-types'
->>>>>>> 1c2f8a1 (chore: trigger release)
 import {
   getBlockParentPage,
   getBlockTitle,
