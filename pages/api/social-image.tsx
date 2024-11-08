@@ -88,7 +88,7 @@ export default async function OGImage(
             flexDirection: 'column',
             border: '16px solid rgba(0,0,0,0.3)',
             borderRadius: 8,
-            zIndex: '1'
+            zIndex: 1
           }}
         >
           <div
@@ -137,7 +137,7 @@ export default async function OGImage(
               display: 'flex',
               borderRadius: '50%',
               border: '4px solid #fff',
-              zIndex: '5'
+              zIndex: 5
             }}
           >
             <img
