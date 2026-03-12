@@ -44,6 +44,11 @@ export default withBundleAnalyzer({
         protocol: 'https',
         hostname: 'jorgearuv.dev',
         pathname: '**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.giphy.com',
+        pathname: '**'
       }
     ],
     formats: ['image/avif', 'image/webp'],
