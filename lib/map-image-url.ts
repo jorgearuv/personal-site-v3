@@ -14,7 +14,10 @@ export const mapImageUrl = (url: string | undefined, block: Block) => {
 
   // notion-utils 7.8.3 returns GIF URLs raw (skipping the Notion proxy),
   // but S3 URLs from Notion are not publicly accessible without the proxy.
-  if (/\.gif(?:$|\?|#)/i.test(url) && url.includes('secure.notion-static.com')) {
+  if (
+    /\.gif(?:$|\?|#)/i.test(url) &&
+    url.includes('secure.notion-static.com')
+  ) {
     const encodedUrl = encodeURIComponent(url)
     const notionUrl = `https://www.notion.so/image/${encodedUrl}`
     if (block?.id) {
