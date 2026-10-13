@@ -1,0 +1,217 @@
+.page {
+  --accent: #009ead;
+  --accent-soft: rgba(0, 158, 173, 0.12);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--fg-color);
+  background: var(--bg-color);
+}
+
+.header {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.brand img {
+  border-radius: 7px;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  font-size: 15px;
+}
+
+.nav a {
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--fg-color-3);
+  transition: background 120ms ease;
+}
+
+.nav a:hover {
+  background: var(--bg-color-0);
+}
+
+.nav a.active {
+  color: var(--fg-color);
+  background: var(--bg-color-0);
+}
+
+.main {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  line-height: 1.65;
+}
+
+.main h1 {
+  font-size: 2.25em;
+  line-height: 1.2;
+  margin: 0.4em 0 0.3em;
+}
+
+.main h2 {
+  font-size: 1.4em;
+  margin: 2em 0 0.5em;
+}
+
+.main h3 {
+  font-size: 1.1em;
+  margin: 1.6em 0 0.3em;
+}
+
+.main p,
+.main li {
+  color: var(--fg-color);
+}
+
+.main ul {
+  padding-left: 1.3em;
+}
+
+.main a:not(.button) {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.muted {
+  color: var(--fg-color-3) !important;
+  font-size: 0.95em;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 0 8px;
+}
+
+.hero img {
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: var(--fg-color-3) !important;
+  max-width: 32em;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.buttonDisabled {
+  composes: button;
+  color: var(--fg-color-3);
+  background: var(--bg-color-0);
+  cursor: default;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 36px 0 8px;
+}
+
+.card {
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--bg-color-1);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--fg-color-3);
+}
+
+.callout {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+}
+
+.callout p {
+  margin: 0.2em 0;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--fg-color-0);
+  padding: 12px 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq details p,
+.faq details ol,
+.faq details ul {
+  margin: 0.6em 0 0.2em;
+}
+
+.byline {
+  text-align: center;
+  color: var(--fg-color-3);
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.byline a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-left: -10px;
+  }
+
+  .main h1 {
+    font-size: 1.9em;
+  }
+}

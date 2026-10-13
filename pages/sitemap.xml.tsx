@@ -4,6 +4,13 @@ import type { SiteMap } from '@/lib/types'
 import { host } from '@/lib/config'
 import { getSiteMap } from '@/lib/get-site-map'
 
+// Pages that live in the codebase instead of Notion.
+const staticPaths = [
+  'limpia-fotos',
+  'limpia-fotos/soporte',
+  'limpia-fotos/privacidad'
+]
+
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   if (req.method !== 'GET') {
     res.statusCode = 405
@@ -42,7 +49,7 @@ const createSitemap = (siteMap: SiteMap) =>
       <loc>${host}/</loc>
     </url>
 
-    ${Object.keys(siteMap.canonicalPageMap)
+    ${[...Object.keys(siteMap.canonicalPageMap), ...staticPaths]
       .map((canonicalPagePath) =>
         `
           <url>
